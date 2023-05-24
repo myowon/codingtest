@@ -1,0 +1,12 @@
+다음으로 `world_bank2020.csv` 파일을 로드한다. 이 파일은 각 국가의 1960년 부터 2020년 까지의 GDP를 저장한 [세계은행의 데이터](http://data.worldbank.org/indicator/NY.GDP.MKTP.CD) 파일이다. 이 파일을 읽어서 `GDP_df`라는 이름의 DataFrame을 생성하라.
+
+불필요한 해더 정보들을 skip하고 국가 이름과 2011년 부터 2020년까지의 10년간의 GDP 데이터만 남기고 나머지 컬럼들은 모두 삭제한다. 컬럼 이름 `Country Name`을 그냥 `Country`로 변경하라.
+
+또한 몇몇 국가의 이름을 다음과 같이 변경한다.
+```
+"Korea, Rep.": "South Korea", 
+"Iran, Islamic Rep.": "Iran",
+"Hong Kong SAR, China": "Hong Kong"
+```
+
+이 일을 하는 함수 `answer_two`를 작성하라. 함수 answer_two는 `GDP_df`를 반환한다.
