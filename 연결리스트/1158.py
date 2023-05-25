@@ -27,4 +27,4 @@ for i in range(N):
     if s >= len(ar):
         s = s % len(ar)
     result.append(ar.pop(s))
-print(result)
+print(str(result).replace('[','<').replace(']','>'))
