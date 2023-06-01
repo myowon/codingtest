@@ -11,9 +11,9 @@ def z(m, x, y):
     half = m // 2
     q = half * half
     
-    if x < half and y < half: #제 2사분면
+    if x < half and y < half: #제 1사분면
         return z(half, x, y)
-    elif x < half and y >= half: #제 1사분면
+    elif x < half and y >= half: #제 2사분면
         return q + z(half, x, y - half)
     elif x >= half and y < half: #제 3사분면
         return q * 2 + z(half, x - half, y)
